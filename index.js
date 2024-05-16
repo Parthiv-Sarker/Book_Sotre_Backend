@@ -24,7 +24,9 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-	res.send("Hello");
+	res.json({
+		message:"Express Server"
+	});
 });
 
 app.use("/api/user", userRouter);
