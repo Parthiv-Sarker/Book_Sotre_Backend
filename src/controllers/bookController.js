@@ -5,11 +5,12 @@ import { uploadOnCloudinary } from "../services/cloudinary.js";
 const addBook = async (req, res) => {
 	const { title, author } = req.body;
 
+	console.log("Hello 1");
 	const userId = req.userId;
 
 	try {
 		const book = await Book.findOne({ title });
-
+		console.log("Hello 1");
 		if (book) {
 			return res.status(400).json({ message: "Book already exists" });
 		}
