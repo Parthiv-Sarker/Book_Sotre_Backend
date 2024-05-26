@@ -47,9 +47,6 @@ coverage/
 # Optional stylelint cache
 .stylelintcache
 
-# Temporary files
-tmp/
-temp/
 
 # Parcel-bundler cache
 .cache/
