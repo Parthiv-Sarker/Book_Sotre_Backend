@@ -74,7 +74,7 @@ const loginUser = async (req, res) => {
 			},
 			process.env.JWT_SECRET,
 			{
-				expiresIn: "30d", // Token expires in 1 day
+				expiresIn: "1d", // Token expires in 1 day
 			}
 		);
 
